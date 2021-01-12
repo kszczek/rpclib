@@ -90,7 +90,7 @@ set(DEP_SOURCES
   ${RPCLIB_DEPENDENCIES}/src/format.cc
   ${RPCLIB_DEPENDENCIES}/src/posix.cc)
 
-add_library(${PROJECT_NAME}
+add_library(${PROJECT_NAME} SHARED
   lib/rpc/dispatcher.cc
   lib/rpc/server.cc
   lib/rpc/client.cc
